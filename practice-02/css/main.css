@@ -1,0 +1,26 @@
+.main {
+  background-color: lightblue;
+  padding: 20px;
+}
+.main .main-header {
+  font-size: 2em;
+}
+.main .main-paragraph {
+  font-size: 1em;
+  color: cadetblue;
+}
+
+.main h1,
+.main p,
+footer h1,
+footer p {
+  letter-spacing: 3px;
+  line-height: 30px;
+}
+
+footer .footer-header {
+  color: brown;
+}
+.footer-header:hover {
+  color: pink;
+}/*# sourceMappingURL=main.css.map */

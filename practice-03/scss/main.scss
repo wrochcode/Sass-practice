@@ -1,0 +1,90 @@
+// // css varaibel
+// :root{
+//     --primary-color: #f1f5f2;
+//     --secondary-color: #b13221;
+//     --text-color: #262d2d;
+// }
+
+// body{
+//     background-color: var(--primary-color);
+//     // color: var(--text-color);
+// }
+// h1{
+//     color: var(--secondary-color);
+// }
+
+// sass variabel
+$primary-color: hsl(29, 100%, 91%);
+$secondary-color: #b13221;
+$text-color: #262d2d;
+
+body {
+    $thirdty-color: #4b33ff !global;
+    background-color: $primary-color;
+}
+
+h1 {
+    color: $text-color;
+    background-color: $thirdty-color;
+}
+
+//contoh alert: (biasa)
+// $primary-alert:blue;
+// $danger-alert:red;
+// $success-alert:green;
+// $warning-alert:yellow;
+
+$alert: (
+    'danger':red,
+    'primary':blue,
+    'warning':yellow,
+    'success':green
+);
+
+.button{
+    display: inline-block;
+    // justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: $secondary-color;
+    // justify-items: center;
+}
+.button-success {
+    padding: 10px;
+    display: inline;
+    margin: 5px;
+    // height: auto;
+    width: 100px;
+    background-color: map-get($alert, 'success');
+    color: red;
+}
+.button-danger {
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+    // height: auto;
+    width: 100px;
+    background-color: map-get($alert, 'danger');
+    color: $text-color;
+}
+.button-warning {
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+    // height: auto;
+    width: 100px;
+    background-color: map-get($alert, 'warning');
+    color: $text-color;
+}
+.button-primary {
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+    // height: auto;
+    width: 100px;
+    background-color: map-get($alert, 'primary');
+    color: white;
+}
